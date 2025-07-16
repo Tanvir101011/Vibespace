@@ -1,0 +1,90 @@
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Orbitron', sans-serif;
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(to right, #232526, #414345);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-shadow: 0 0 5px #fff, 0 0 10px #00f2ff, 0 0 15px #00f2ff;
+    }
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      background-color: #444;
+      color: white;
+      transition: background 0.3s ease, transform 0.2s;
+    }
+    button:hover {
+      background-color: #00f2ff;
+      color: #000;
+      transform: scale(1.05);
+    }
+    .selected-btn {
+      background-color: #00f2ff;
+      color: #000;
+    }
+    #quoteBox {
+      margin: 20px 0;
+      font-size: clamp(1rem, 2vw, 1.5rem);
+      min-height: 60px;
+    }
+    #imageBox img {
+      max-width: 250px;
+      border-radius: 12px;
+      margin: 15px 0;
+    }
+    iframe {
+      margin-top: 20px;
+      width: 80%;
+      height: 100px;
+      border: none;
+      border-radius: 8px;
+    }
+    select {
+      margin-top: 10px;
+      padding: 6px 12px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: none;
+    }
+    #moodButtons {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    #historyBox {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      text-shadow: none;
+    }
+    footer {
+      font-size: 0.8rem;
+      color: #f4eeee;
+      /* padding: 20px; */
+    }
+    #introContent {
+      margin-top: 30px;
+      font-size: 1.1rem;
+      opacity: 0.8;
+    }
+    @media (max-width: 600px) {
+      button {
+        width: 90%;
+        margin: 5px auto;
+      }
+      iframe {
+        width: 100%;
+      }
+    }

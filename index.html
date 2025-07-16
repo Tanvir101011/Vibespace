@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vibe Space 🎵</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <h1 style="cursor:pointer" onclick="resetApp()">Vibe Space 🎵</h1>
+
+  <div>
+    <label for="languageSelector" style="font-size:1.2rem;">Choose Language: </label>
+    <select id="languageSelector" onchange="renderMoodButtons()">
+      <option value="english">English</option>
+      <option value="hindi">Hindi</option>
+      <option value="punjabi">Punjabi</option>
+    </select>
+  </div>
+
+  <div id="moodButtons"></div>
+  <div id="introContent">Welcome to Vibe Space! Choose your language and pick a mood to dive into music that matches your vibe.</div>
+  <div id="quoteBox"></div>
+  <div id="imageBox"></div>
+  <div id="songBox"></div>
+  <div id="historyBox"></div>
+
+  <footer>© 2025 VibeSpace by Tanvir Singh</footer>
+
+  
